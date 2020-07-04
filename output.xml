@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20200703 09:11:42.271" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Development\Robot\POM_RobotFramework\Test\TestSuite\TC_01_Launch.robot" id="s1" name="TC 01 Launch">
+<test id="s1-t1" name="TestCase_01: Navigate to Log_in Page">
+<kw name="Open Mercury Website in Chrome and Maximize">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>internet explorer</arg>
+</arguments>
+<msg timestamp="20200703 09:11:42.548" level="INFO">Opening browser 'internet explorer' to base url 'http://www.just-eat.co.uk/'</msg>
+<status status="PASS" endtime="20200703 09:11:56.728" starttime="20200703 09:11:42.548"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200703 09:11:56.746" starttime="20200703 09:11:56.729"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Website navigated successfully</arg>
+</arguments>
+<status status="PASS" endtime="20200703 09:11:56.761" starttime="20200703 09:11:56.746"></status>
+</kw>
+<status status="PASS" endtime="20200703 09:11:56.761" starttime="20200703 09:11:42.547"></status>
+</kw>
+<kw name="Verity the Home page title">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg timestamp="20200703 09:11:56.781" level="INFO">Page title is 'Order takeaway online from 30,000+ food delivery restaurants. | Just Eat'.</msg>
+<status status="PASS" endtime="20200703 09:11:56.781" starttime="20200703 09:11:56.762"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Home Page title verified</arg>
+</arguments>
+<status status="PASS" endtime="20200703 09:11:56.783" starttime="20200703 09:11:56.781"></status>
+</kw>
+<status status="PASS" endtime="20200703 09:11:56.784" starttime="20200703 09:11:56.762"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20200703 09:12:02.786" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20200703 09:12:02.786" starttime="20200703 09:11:56.785"></status>
+</kw>
+<kw name="Click on Sign-on Link">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200703 09:12:07.789" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200703 09:12:07.789" starttime="20200703 09:12:02.787"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//input[@name='postcode']</arg>
+<arg>AR51 1AA</arg>
+</arguments>
+<msg timestamp="20200703 09:12:07.790" level="INFO">Typing text 'AR51 1AA' into text field '//input[@name='postcode']'</msg>
+<status status="PASS" endtime="20200703 09:12:09.325" starttime="20200703 09:12:07.789"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200703 09:12:14.326" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200703 09:12:14.326" starttime="20200703 09:12:09.325"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20200703 09:12:14.327" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" endtime="20200703 09:12:47.302" starttime="20200703 09:12:14.326"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200703 09:12:52.304" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200703 09:12:52.304" starttime="20200703 09:12:47.303"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Clicked on Sign-on link successfully</arg>
+</arguments>
+<status status="PASS" endtime="20200703 09:12:52.306" starttime="20200703 09:12:52.304"></status>
+</kw>
+<status status="PASS" endtime="20200703 09:12:52.306" starttime="20200703 09:12:02.787"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20200703 09:12:58.308" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20200703 09:12:58.308" starttime="20200703 09:12:52.306"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200703 09:13:01.585" starttime="20200703 09:12:58.309"></status>
+</kw>
+<doc>This is some basic info about test case</doc>
+<tags>
+<tag>Somke</tag>
+</tags>
+<status status="PASS" endtime="20200703 09:13:01.586" critical="yes" starttime="20200703 09:11:42.545"></status>
+</test>
+<doc>This is some basic info about whole test suite</doc>
+<status status="PASS" endtime="20200703 09:13:01.610" starttime="20200703 09:11:42.277"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Somke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC 01 Launch" pass="1">TC 01 Launch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
